@@ -1,0 +1,47 @@
+.carousel {
+  width: 100%;
+  display: inline-block;
+
+  .article {    
+    min-height: 90vh;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: lightgrey;
+
+    .header {
+      display: block;
+      width: 100%;
+  
+      .section {
+        font-size: large;
+        color: cornflowerblue;
+      }
+      
+      .publish-date {
+        float: right;
+        font-size: large;
+      }
+    }
+  
+    .headline {
+      display: block;
+      font-size: large;
+      color: blue;
+  
+      .active {
+        color: red;
+      }
+    }
+  
+    .description {
+      font-style: italic;
+    }
+    
+    .image {
+      text-align: center;
+    }
+  }
+
+}

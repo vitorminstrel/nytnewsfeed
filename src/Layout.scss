@@ -1,0 +1,28 @@
+.article-feeder-layout {
+  margin-bottom: 80px;
+
+  .banner {
+    background: url('./new-york.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+  
+    h1 {
+      padding: 50px;
+    }
+  }
+  
+  .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 0;
+
+    span {
+      font-size: x-small;
+      color: white;
+      display: block;
+    }
+  }
+}

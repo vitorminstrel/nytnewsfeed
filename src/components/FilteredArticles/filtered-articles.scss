@@ -1,0 +1,36 @@
+.filtered-articles {
+  display: inline-block;
+  width: 100%;
+
+  .article {
+    margin-bottom: 20px;
+
+    .header {
+      width: 80%;
+      font-size: large;
+      color: blue;
+
+      .active {
+        color: red;
+      }
+    }
+
+    .publish-date {
+      width: 20%;
+      text-align: right;
+      float: right;
+      font-size: large;
+    }
+
+    .description {
+      font-style: italic;
+    }
+  }
+
+  .no-results {
+    text-align: center;
+    > p {
+      color: green;
+    }
+  }
+}

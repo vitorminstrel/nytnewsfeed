@@ -6,9 +6,20 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^25.2.3",
+    "@types/react-router-dom": "^5.1.5",
+    "bootstrap": "^4.5.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +41,58 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "bail": false,
+    "verbose": false,
+    "collectCoverage": false,
+    "testEnvironment": "jsdom",
+    "roots": [
+      "src"
+    ],
+    "transform": {
+      "^.+\\.(js|ts|tsx)$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts",
+      "tsx"
+    ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/(?!(lodash-es/.*))"
+    ],
+    "testRegex": "/*.test.(ts|tsx)$",
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/src/testHelper.js"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "testPathIgnorePatterns": [
+      "/bin/",
+      "/node_modules/",
+      "/obj/"
+    ],
+    "setupFiles": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupEnzyme.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "lcov"
+    ],
+    "testMatch": null,
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "<rootDir>/tsconfig.json",
+        "importHelpers": true,
+        "isolatedModules": true,
+        "diagnostics": false
+      }
+    }
   }
 }

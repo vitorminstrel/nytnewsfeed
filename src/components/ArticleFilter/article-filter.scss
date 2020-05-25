@@ -1,0 +1,13 @@
+.article-filter {
+    width: 30%;
+    min-width: 290px;
+    display: flex;
+    margin-bottom: 32px;
+    float: right;
+
+    > button {
+      width: 200px;
+      margin-left: 10px;
+    }
+}
+  
